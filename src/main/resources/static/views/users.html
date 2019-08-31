@@ -1,0 +1,23 @@
+<div class="section" ng-app="myApp" ng-controller="usersController">
+    <table style="border: 1px solid black;">
+        <tr style="border: 1px solid black;" ng-repeat="x in allpatients">
+            <td style="border: 1px solid black; width: 80px;">{{x.id}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.sampleid}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.date}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.patientid}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.age}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.doctorname}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.neocolbm1}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.neocolbm2}}</td>
+            <td style="border: 1px solid black; width: 80px; ">{{x.neocolbm3}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.neocolbm4}}</td>
+            <td style="border: 1px solid black; width: 80px;">{{x.neocolbm5}}</td>
+            <td style="border: 1px solid black; width: 80px;;">{{x.neocolbm6}}</td>
+            <td style="border: 1px solid black; width: 80px;;">{{x.approved}}</td>
+            <td style="border: 1px solid black; width: 80px;;">{{x.remarks}}</td>
+            <td style="border: 1px solid black; width: 80px;;">
+                <button type="submit" ng-click="approveData(x)">Approve</button>
+            </td>
+        </tr>
+    </table>
+</div>

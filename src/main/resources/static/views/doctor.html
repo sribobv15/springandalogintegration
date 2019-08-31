@@ -1,0 +1,17 @@
+<div class="section" ng-app="myApp" ng-controller="doctorController">
+    <h3>NEO COL</h3>
+    <form>
+        <label><b>Id:</b></label>
+        <input type="text" ng-model="calculate.id" name="id"/>
+        <label><b>Date of Birth:</b></label>
+        <input type="text" ng-model="calculate.dob" name="id"/>
+        <label><b>Age:</b></label>
+        <input type="text" ng-model="calculate.age" name="id"/>
+        <br/>
+        <input type="radio" ng-model="gender" name="gender" value="Male">Male
+        <input type="radio" ng-model="gender" name="gender" value="Female">Female
+        <br/>
+        <button type="submit" ng-click="calculateNeoCol()" name="calculate">Calculate Neo Col</button>
+        <br/>
+    </form>
+</div>

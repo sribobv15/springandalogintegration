@@ -1,0 +1,47 @@
+<div ng-app="myApp" ng-controller="homeController" class="home-section" style="width:800px; margin:0 auto;">
+    <form>
+        <label><b>Enter the unique id to search patient record:</b></label>
+        <input type="number" ng-model="patient.uniqueid" name="uniqueid"/>
+        <button type="submit" ng-click="searchData()" name="search">Search</button>
+        <br/><br/>
+        <div id="serverresponse">
+    <!--        Sample id: {{patient.sampleid}}<br>
+            Date: {{patient.date}}<br>
+            <b>Patient Id:</b> {{patient.patientid}}<br>
+            <b>Doctor Name:</b> {{patient.doctorname}}<br>
+            <b>Neo Col Bm1:</b> {{patient.neocolbm1}}<br>
+            <b>Neo Col Bm2:</b> {{patient.neocolbm2}}<br>
+            <b>Neo Col Bm3:</b> {{patient.neocolbm3}}<br>
+            <b>Neo Col Bm4:</b> {{patient.neocolbm4}}<br>
+            <b>Neo Col Bm5:</b> {{patient.neocolbm5}}<br>
+            <b>Neo Col Bm6:</b> {{patient.neocolbm6}}<br>
+            <b>Remarks:</b> {{patient.remarks}}<br> -->
+        </div>
+        <label><b>Sample Id</b></label>
+        <input type="text" ng-model="patient.sampleid" name="sampleid" />
+        <br/><label><b>Date(YYYY-MM-DD)</b></label>
+        <input type="text" ng-model="patient.date" placeholder="YYYY-MM-DD" name="date" /><br/>
+        <label><b>Patient id</b></label>
+        <input type="text" ng-model="patient.patientid" name="patientid" /><br/>
+        <label><b>Age</b></label>
+        <input type="number" ng-model="patient.age" name="age" /><br/>
+        <label><b>Doctor name</b></label>
+        <input type="text" ng-model="patient.doctorname" name="doctorname" /><br/>
+        <label><b>Neo Col BM1 </b></label>
+        <input type="number" ng-model="patient.neocolbm1" name="neocolbm1" /><br/>
+        <label><b>Neo Col BM2 </b></label>
+        <input type="number" ng-model="patient.neocolbm2" name="neocolbm2" /><br/>
+        <label><b>Neo Col BM3 </b></label>
+        <input type="number" ng-model="patient.neocolbm3" name="neocolbm3" /><br/>
+        <label><b>Neo Col BM4 </b></label>
+        <input type="number" ng-model="patient.neocolbm4" name="neocolbm4" /><br/>
+        <label><b>Neo Col BM5 </b></label>
+        <input type="number" ng-model="patient.neocolbm5" name="neocolbm5" /><br/>
+        <label><b>Neo Col BM6 </b></label>
+        <input type="number" ng-model="patient.neocolbm6" name="neocolbm6" /><br/>
+        <label><b>Remarks </b></label>
+        <input type="text" ng-model="patient.remarks" name="remarks" /><br/>
+        <button type="submit" ng-click="saveNewData()" name="submit">Create New Record</button><br/><br/>
+        <button type="submit" ng-click="updateData(patient.uniqueid)" name="update">Update existing record</button>
+    </form>
+</div>
